@@ -1,0 +1,20 @@
+@import 'base/null';
+@import 'base/variables';
+
+
+@import 'blocks/head';
+@import 'blocks/sidepanel';
+@import 'blocks/about';
+
+* {
+    font-family: 'Padauk', sans-serif;
+}
+
+body {
+    background: linear-gradient(180deg, #EA9B97 31.04%, rgba(255, 255, 255, 0) 100%), #CCBDDC;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
