@@ -3,8 +3,7 @@
     &__title {
         position: relative;
         font-weight: bold;
-        font-size: 44px;
-        line-height: 65px;
+        font-size: 30px;
         text-align: center;
         text-transform: uppercase;
         color: rgba(255, 255, 255, 0.85);
@@ -12,9 +11,9 @@
         &::before {
             position: absolute;
             content: '';
-            width: 219px;
+            width: 152px;
             height: 2px;
-            top: 51px;
+            top: 35px;
             background-color: rgba(255, 255, 255, 0.85);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
@@ -22,7 +21,17 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        padding: 70px 40px 70px 40px;
+        padding: 50px 40px 70px 40px;
+    }
+    &__photo {
+        img {
+            transition: all 0.6s ease;
+            &:hover {
+                transform: translateX(30px);
+                box-shadow: -15px 15px 4px rgba(0, 0, 0, 0.25);
+            }
+        }
+            
     }
     &__text {
         padding-left: 50px;
